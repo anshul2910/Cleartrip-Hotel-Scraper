@@ -3,6 +3,7 @@ import requests
 import time
 import lxml
 import os
+import data
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
@@ -12,8 +13,8 @@ from bs4 import BeautifulSoup
 # browser = webdriver.Edge("C:\\Users\\Anshul\\Desktop\\Instagram\\edgedriver_win64\\msedgedriver.exe")
 
 
-baseURL = "https://me.cleartrip.com/"
-cityURL = "https://me.cleartrip.com//hotels/united-states/miami"
+baseURL = data.baseURL
+cityURL = data.cityURL
 
 cityURLS = []
 with open ("PageNumberLinks.txt", 'r') as file:

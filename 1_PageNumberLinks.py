@@ -5,14 +5,14 @@ import lxml
 import re
 from selenium import webdriver
 from bs4 import BeautifulSoup
+import data
 
 
 # browser = webdriver.Chrome("C:\\Users\\Anshul\\Desktop\\Instagram\\chromedriver_win32\\chromedriver.exe")
 # browser = webdriver.Edge("C:\\Users\\Anshul\\Desktop\\Instagram\\edgedriver_win64\\msedgedriver.exe")
 
-baseURL = "https://me.cleartrip.com/"
-cityURL = "https://me.cleartrip.com/hotels/united-states/miami"  #change cityURL for fetching pageNumberLinks of different city.
-
+baseURL = data.baseURL
+cityURL = data.cityURL 
 # browser.get(cityUrl)
 
 page = requests.get(cityURL)
